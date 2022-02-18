@@ -1,0 +1,21 @@
+###
+Render the script tag that renders json-ld
+###
+
+# Import formatters
+import makeArticleData from './json-ld-formatters/article.coffee'
+import makeOrganizationData from './json-ld-formatters/organization.coffee'
+import makeProductData from './json-ld-formatters/product.coffee'
+import makeSearchData from './json-ld-formatters/search.coffee'
+
+# Export helper methods
+export makeJsonLdArticleTag = (props) -> makeTag makeArticleData props
+export makeJsonLdOrganizationTag = (props) -> makeTag makeOrganizationData props
+export makeJsonLdProductTag = (props) -> makeTag makeProductData props
+export makeJsonLdSearchTag = (props) -> makeTag makeSearchData props
+
+# Wrap the json ld data in the stucture needed by vue meta
+makeTag = (data) ->
+	type: 'application/ld+json'
+	json: { '@context': 'http://schema.org', ...data }
+	hid: 'json-ld-' + data['@type'].toLowerCase()

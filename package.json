@@ -1,6 +1,6 @@
 {
   "name": "@bkwld/json-ld-formatters",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A library of helper functions for creating common JSON LD schemas",
   "main": "index.coffee",
   "scripts": {

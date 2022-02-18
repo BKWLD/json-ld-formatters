@@ -27,9 +27,9 @@ export default
 	# Here's where the use the formatter
 	head: -> {
 		...@buildHead
-			title: @page.title
+			title: @page.marqueeTitle
 		script: [ makeJsonLdArticleTag
-			title: @page.title
+			title: @page.marqueeTitle
 			image: @page.image
 			publishedAt: new Date @page.dateCreated
 			updatedAt: new Date @page.dateUpdated

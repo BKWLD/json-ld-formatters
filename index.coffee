@@ -3,10 +3,10 @@ Render the script tag that renders json-ld
 ###
 
 # Import formatters
-import makeArticleData from './json-ld-formatters/article.coffee'
-import makeOrganizationData from './json-ld-formatters/organization.coffee'
-import makeProductData from './json-ld-formatters/product.coffee'
-import makeSearchData from './json-ld-formatters/search.coffee'
+import makeArticleData from './formatters/article.coffee'
+import makeOrganizationData from './formatters/organization.coffee'
+import makeProductData from './formatters/product.coffee'
+import makeSearchData from './formatters/search.coffee'
 
 # Export helper methods
 export makeJsonLdArticleTag = (props) -> makeTag makeArticleData props

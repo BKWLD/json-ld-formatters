@@ -2,6 +2,12 @@
 
 A library of helper functions for creating common JSON LD schemas.  These are intended to be used in Nuxt.js projects.
 
+## Install
+
+```
+yarn add @bkwld/json-ld-formatters
+```
+
 ## Example
 
 Here's how you would use this in a typical Cloak page component.

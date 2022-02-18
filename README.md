@@ -49,7 +49,7 @@ export default
 
 Read the source code for the available formatters and their expected properties.
 
-- [article](./formatters/article.coffee)
-- [organization](./formatters/organization.coffee)
-- [product](./formatters/product.coffee)
-- [search](./formatters/search.coffee)
+- [article](./formatters/article.coffee) - `makeJsonLdArticleTag`
+- [organization](./formatters/organization.coffee) - `makeOrganizationData`
+- [product](./formatters/product.coffee) `makeJsonLdProductTag`
+- [search](./formatters/search.coffee) - `makeSearchData`

@@ -5,7 +5,10 @@
   "author": "Bukwild",
   "license": "MIT",
   "scripts": {
-    "build": "parcel build"
+    "build": "parcel build",
+    "dev": "parcel watch",
+    "version": "npm run build",
+    "postversion": "git push --follow-tags"
   },
   "engines": {
     "node": ">= 12"

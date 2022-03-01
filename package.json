@@ -1,19 +1,20 @@
 {
   "name": "@bkwld/json-ld-formatters",
   "version": "0.1.1",
-  "description": "A library of helper functions for creating common JSON LD schemas",
-  "main": "index.coffee",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BKWLD/json-ld-formatters.git"
-  },
-  "author": "",
+  "description": "A library of helper functions for creating common JSON LD schemas.",
+  "author": "Bukwild",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/BKWLD/json-ld-formatters/issues"
+  "scripts": {
+    "build": "parcel build"
   },
-  "homepage": "https://github.com/BKWLD/json-ld-formatters#readme"
+  "engines": {
+    "node": ">= 12"
+  },
+  "source": "src/index.coffee",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "devDependencies": {
+    "@parcel/transformer-coffeescript": "2.3.2",
+    "parcel": "^2.3.2"
+  }
 }

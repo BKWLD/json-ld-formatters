@@ -7,12 +7,14 @@ import makeArticleData from './formatters/article.coffee'
 import makeOrganizationData from './formatters/organization.coffee'
 import makeProductData from './formatters/product.coffee'
 import makeSearchData from './formatters/search.coffee'
+import makeBreadcrumbsData from './formatters/breadcrumbs.coffee'
 
 # Export helper methods
 export makeJsonLdArticleTag = (props) -> makeTag makeArticleData props
 export makeJsonLdOrganizationTag = (props) -> makeTag makeOrganizationData props
 export makeJsonLdProductTag = (props) -> makeTag makeProductData props
 export makeJsonLdSearchTag = (props) -> makeTag makeSearchData props
+export makeJsonLdBreadcrumbsTag = (props) -> makeTag makeBreadcrumbsData props
 
 # Wrap the json ld data in the stucture needed by vue meta
 makeTag = (data) ->

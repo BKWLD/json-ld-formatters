@@ -15,11 +15,7 @@ export default ({
 	recipeYield
 	recipeIngredient
 	recipeInstructions
-
 } = {}) ->
-
-	# Set defaults and cast vars
-	type = type || 'blog'
 
 	# Make the JSON LD
 	{

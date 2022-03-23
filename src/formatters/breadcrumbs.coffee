@@ -4,7 +4,7 @@
 # Set defaults and cast vars
 url = url || process.env.URL
 
-export default ({ breadcrumbsList = [], name }) ->
+export default ({ breadcrumbsList = [], name = 'Breadcrumbs' }) ->
 
 	# Make the breadcrumbs
 	breadcrumbs = breadcrumbsList.map (data, index, array) -> 

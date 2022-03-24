@@ -4,7 +4,7 @@
 # Set defaults and cast vars
 url = url || process.env.URL
 
-export default (breadcrumbsList = []) ->
+export default ({ breadcrumbsList = [], name = 'Breadcrumbs' }) ->
 
 	# Make the breadcrumbs
 	breadcrumbs = breadcrumbsList.map (data, index, array) -> 
@@ -19,6 +19,7 @@ export default (breadcrumbsList = []) ->
 	{
 		"@context": "https://schema.org"
 		"@type": "BreadcrumbList",
+		name
 		"itemListElement": breadcrumbs
 	}
 

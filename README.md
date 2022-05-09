@@ -54,4 +54,4 @@ Read the source code for the available formatters and their expected properties.
 - [organization](./formatters/organization.coffee) - `makeJsonLdOrganizationTag`
 - [product](./formatters/product.coffee) `makeJsonLdProductTag`
 - [search](./formatters/search.coffee) - `makeJsonLdSearchTag`
-- [FAQPage](./formatters/faqPage.coffee) - `makeJsonLdFAQPageTag`
+- [faqPage](./formatters/faqPage.coffee) - `makeJsonLdFAQPageTag`

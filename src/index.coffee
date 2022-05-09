@@ -9,6 +9,7 @@ import makeProductData from './formatters/product.coffee'
 import makeSearchData from './formatters/search.coffee'
 import makeBreadcrumbsData from './formatters/breadcrumbs.coffee'
 import makeRecipeData from './formatters/recipe.coffee'
+import makeFAQPageData from './formatters/faqPage.coffee'
 
 # Export helper methods
 export makeJsonLdArticleTag = (props) -> makeTag makeArticleData props
@@ -17,6 +18,7 @@ export makeJsonLdProductTag = (props) -> makeTag makeProductData props
 export makeJsonLdSearchTag = (props) -> makeTag makeSearchData props
 export makeJsonLdBreadcrumbsTag = (props) -> makeTag makeBreadcrumbsData props
 export makeJsonLdRecipeTag = (props) -> makeTag makeRecipeData props
+export makeJsonLdFAQPageTag = (props) -> makeTag makeFAQPageData props
 
 # Wrap the json ld data in the stucture needed by vue meta
 makeTag = (data) ->

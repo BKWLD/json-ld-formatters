@@ -51,7 +51,7 @@ Read the source code for the available formatters and their expected properties.
 
 - [article](./formatters/article.coffee) - `makeJsonLdArticleTag`
 - [breadcrumbs](./formatters/breadcrumbs.coffee) - `makeJsonLdBreadcrumbsTag`
+- [faqPage](./formatters/faqPage.coffee) - `makeJsonLdFAQPageTag`
 - [organization](./formatters/organization.coffee) - `makeJsonLdOrganizationTag`
 - [product](./formatters/product.coffee) `makeJsonLdProductTag`
 - [search](./formatters/search.coffee) - `makeJsonLdSearchTag`
-- [faqPage](./formatters/faqPage.coffee) - `makeJsonLdFAQPageTag`

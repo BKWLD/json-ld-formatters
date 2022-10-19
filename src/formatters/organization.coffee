@@ -2,10 +2,14 @@
 # https://developers.google.com/search/docs/advanced/structured-data/logo
 export default ({
 	name
-	url
 	logo
-	publishedAt
-	updatedAt
+	url
+	otherUrls = [] # List of alternate URLS, like twitter, etc
+	phone
+	address
+	city
+	state
+	zip
 } = {}) ->
 
 	# Set defaults and cast vars
@@ -16,6 +20,21 @@ export default ({
 	{
 		'@type': 'Organization'
 		name
-		url
 		logo
+		url
+		...(unless otherUrls.length then {} else sameAs: otherUrls)
+		...(unless phone then {} else contactPoint: [
+			'@type': 'ContactPoint'
+			telephone: phone
+			contactType: 'sales'
+		])
+		...(unless address and city and state and zip then {} else location:
+			'@type': 'Place'
+			address:
+				'@type': 'PostalAddress'
+				streetAddress: address
+				addressLocality: city
+				addressRegion: state
+				postalCode: zip
+		)
 	}

@@ -14,6 +14,10 @@ export default ({
 		state
 		zip
 	} = {}
+	locationRequirements: {
+    countrySpec: countrySpecUrl
+    countryName: countryName
+	} = {}
 	type = 'FULL_TIME'
 	publishedAt
 } = {}) ->
@@ -42,4 +46,8 @@ export default ({
 				addressRegion: state
 				postalCode: zip
 		)
+		applicantLocationRequirements:
+			'@type': 'Country'
+			sameAs: countrySpecUrl || 'https://www.wikidata.org/wiki/Q30'
+			name: countryName || 'USA'
 	}

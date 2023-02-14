@@ -15,8 +15,8 @@ export default ({
 		zip
 	} = {}
 	locationRequirements: {
-    countrySpec: countrySpecUrl
-    countryName: countryName
+		countrySpec: countrySpecUrl
+		countryName: countryName
 	} = {}
 	type = 'FULL_TIME'
 	publishedAt

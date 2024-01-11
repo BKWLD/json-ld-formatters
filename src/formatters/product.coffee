@@ -9,14 +9,17 @@ export default ({
 	url
 	price
 	available
+	productID
+	priceValidUntil
+	gtin12
 } = {}) ->
-
 	# Set defaults and cast vars
 	brand = brand || process.env.SITE_NAME
 
 	# Make the JSON LD
 	{
 		'@type': 'Product'
+		"@id": url
 		name
 		image
 		description: do -> description
@@ -24,6 +27,8 @@ export default ({
 			.replace /\s+/g, ' ' # Remove newlines and double spaces
 			.trim()
 		sku
+		productID
+		gtin12
 		brand:
 			'@type': 'Brand'
 			name: brand
@@ -32,6 +37,7 @@ export default ({
 			url
 			priceCurrency: 'USD'
 			price
+			priceValidUntil
 			availability: do ->
 				return unless available?
 				if available

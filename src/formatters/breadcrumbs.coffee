@@ -18,7 +18,7 @@ export default ({ breadcrumbsList = [], name = 'Breadcrumbs' }) ->
 	# Make the JSON LD
 	{
 		"@context": "https://schema.org"
-		"@type": "BreadcrumbList",
+		"@type": "BreadcrumbList"
 		name
 		"itemListElement": breadcrumbs
 	}

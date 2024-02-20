@@ -2,7 +2,7 @@
 # https://developers.google.com/search/docs/advanced/structured-data/breadcrumb
 
 # Set defaults and cast vars
-url = url || process?.env?.URL || window?.location?.href
+url = url || process?.env?.URL || window?.location?.origin
 
 export default ({ breadcrumbsList = [], name = 'Breadcrumbs' }) ->
 
